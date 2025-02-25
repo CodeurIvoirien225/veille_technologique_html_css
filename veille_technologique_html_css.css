@@ -1,0 +1,158 @@
+/* Styles généraux */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    background: #2E7D32;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ a {
+    text-decoration: none;
+    color: rgb(139, 139, 214);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+ 
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2E7D32;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #E8F5E9;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+    transition: transform 0.3s;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+}
+
+footer {
+    background: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Styles généraux */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ✅ Adaptation pour les tablettes et mobiles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* ✅ Optimisation pour les petits écrans (mobiles) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    section {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
